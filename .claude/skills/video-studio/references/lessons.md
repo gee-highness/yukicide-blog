@@ -23,3 +23,4 @@ Entries marked (carried) come from the cartoon-studio skill in the Venda Khona r
 - 2026-11-17 V-Me renders in software WebGL here: about 0.5 s a frame at `--scale 0.5`; check with `--stills` first.
 - 2026-11-17 Vercel's GitHub app cannot see the private v_me repo ("repository can't be found"); the built app is 21 MB, too big to upload file by file through the tools. Never test Vercel access with a different repo: that test created the v-me project and a production deployment of venda-khona (cancelled before it went live).
 - 2026-11-17 TopAuto (Cloudflare) and Wikipedia block headless browsers and rate-limit this machine: make your own cards for media, credit the sources in sources.md.
+- 2026-11-17 Edge voices DO work from the cloud through the Node library msedge-tts (the Python edge-tts fails on the proxy's TLS). V-Me now makes missing lines itself (CLI) and the deployed app speaks imported scripts through /api/tts. Termux stays the fallback.
