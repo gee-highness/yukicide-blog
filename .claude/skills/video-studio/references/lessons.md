@@ -21,3 +21,5 @@ Entries marked (carried) come from the cartoon-studio skill in the Venda Khona r
 - 2026-11-17 Web screenshots: capture at phone width (480 px at 2.25x) or the text is unreadable in a vertical video; Chromium repeats the page past about 8 192 device px, so full-page captures are capped; sticky headers must be unpinned first.
 - 2026-11-17 Wikipedia answers a headless browser with "Too many requests": never disguise the browser to get past a block; use a screenshot the user takes on the phone as `src`.
 - 2026-11-17 V-Me renders in software WebGL here: about 0.5 s a frame at `--scale 0.5`; check with `--stills` first.
+- 2026-11-17 Vercel's GitHub app cannot see the private v_me repo ("repository can't be found"); the built app is 21 MB, too big to upload file by file through the tools. Never test Vercel access with a different repo: that test created the v-me project and a production deployment of venda-khona (cancelled before it went live).
+- 2026-11-17 TopAuto (Cloudflare) and Wikipedia block headless browsers and rate-limit this machine: make your own cards for media, credit the sources in sources.md.
