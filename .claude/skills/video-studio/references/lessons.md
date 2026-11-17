@@ -16,3 +16,8 @@ Entries marked (carried) come from the cartoon-studio skill in the Venda Khona r
 - (carried) 2026-11-17 Two 8-minute compilations take about 5 minutes each to encode with `-preset veryfast`.
 - (carried) 2026-11-17 On dark styles, highlight colours must switch to a light accent or they vanish; check brand colours on every style.
 - 2026-11-17 Workspace reset: the repo was cleared and rebuilt as a multi-format video studio (ideas file, one folder per video, skill in `.claude/skills/video-studio`). The cartoon engine (`scripts/toons/` in the venda-khona repo) was not copied; pull it in only when a cartoon video is actually planned.
+- 2026-11-17 The user's main format is a VTuber: the V-Me avatar (gee-highness/v_me) voiced by Termux Edge voices, with web pages, screenshots and clips on screen. V-Me got a `media` cue (corner/full/split/pip/media layouts) and a `termux` voice engine.
+- 2026-11-17 Edge voices still fail from the cloud (TLS to speech.platform.bing.com is intercepted): voices always come from Termux.
+- 2026-11-17 Web screenshots: capture at phone width (480 px at 2.25x) or the text is unreadable in a vertical video; Chromium repeats the page past about 8 192 device px, so full-page captures are capped; sticky headers must be unpinned first.
+- 2026-11-17 Wikipedia answers a headless browser with "Too many requests": never disguise the browser to get past a block; use a screenshot the user takes on the phone as `src`.
+- 2026-11-17 V-Me renders in software WebGL here: about 0.5 s a frame at `--scale 0.5`; check with `--stills` first.

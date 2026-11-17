@@ -2,3 +2,5 @@ videos/*/out/
 node_modules/
 *.zip
 .DS_Store
+videos/*/media/
+videos/*/*.resolved.json

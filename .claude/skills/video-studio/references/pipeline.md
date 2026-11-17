@@ -27,6 +27,15 @@ Node, Python, ffmpeg (check with `ffmpeg -version`), Playwright with Chromium (r
 - Cartoon: the cartoon engine from the venda-khona repo (SVG + `engine.cjs`), to be pulled in on demand.
 - Always: render a contact sheet, view stills at full size, check sound with `ffmpeg -i f.mp4 -af volumedetect -f null -`, confirm no voice line overlaps the next.
 
+## VTuber videos (V-Me engine)
+Repo `gee-highness/v_me` (Angular + three.js VRM avatar). In a cloud session: add it with `add_repo`, clone it to `/home/user/v_me`, `npm ci`. Read its `docs/PERFORMER_MODE.md` and `docs/AI_SCRIPT_AUTHORING_GUIDE.md` before writing a script.
+1. Write `videos/<id>/script.vme.json` (cues: say, expression, gesture, look, camera, caption, media). Setup voice: `{ "engine": "termux", "edge": "en-US-EmmaMultilingualNeural", "edgeRate": "+15%" }`; a second character uses `"voice"` on its say cues.
+2. Validate: `cd /home/user/v_me && npm run performer:validate -- $PWD/../yukicide-blog/videos/<id>/script.vme.json` (always pass absolute paths: npm runs in the v_me folder).
+3. Voices: `npm run performer:voices -- <abs script>` prints the Termux block (also saved as `script.termux.sh`). The user runs it and sends the zip; `--import <zip>` checks every line.
+4. Check stills: `npm run performer:render -- <abs script> --scale 0.5 --stills 2,8,15` (look at every layout; media is fetched and cached in `videos/<id>/media/`).
+5. Render: `npm run performer:render -- <abs script> --out <abs>/videos/<id>/out/<id>.mp4` (+ `.srt`). Software WebGL: about 0.5 s a frame at `--scale 0.5`, several seconds at 1.0; run long renders with `run_in_background`.
+6. Media cue cheatsheet: `{ "do": "media", "screenshot": "<url>", "fullPage": true, "layout": "corner", "credit": "<source>" }`, `{ "do": "media", "src": "clips/x.mp4", "layout": "split", "volume": 0.3 }`, `{ "do": "media", "src": null }`.
+
 ## Delivery
 - Long form: 1920x1080, H.264 CRF 20 to 23, AAC 192k, plus thumbnail 1280x720 and 3 title options in `out/package.md`.
 - Vertical: 1080x1920 CRF 24; WhatsApp copy 720x1280.

@@ -5,7 +5,7 @@ description: Plan, research, script, voice, build and package videos and images 
 
 # Video studio
 
-A repeatable studio for videos that can go viral. Every video starts as a line in `IDEAS.md`, grows into a folder in `videos/` holding its research and every file needed to make it, and ends as finished files plus a log of what was learnt. Evolved from the cartoon-studio skill (code-drawn SVG cartoons); that engine is now one format among several.
+A repeatable studio for videos that can go viral. Every video starts as a line in `IDEAS.md`, grows into a folder in `videos/` holding its research and every file needed to make it, and ends as finished files plus a log of what was learnt. The main format is a **VTuber**: the V-Me 3D avatar (repo `gee-highness/v_me`) voiced by Edge voices made in Termux, presenting and reacting with web pages, screenshots, images and clips on screen (`references/formats.md` 7b, `references/pipeline.md` VTuber section). Code-drawn cartoons remain one format among several.
 
 ## Before you start (every time)
 

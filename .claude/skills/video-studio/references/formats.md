@@ -34,6 +34,14 @@ An anchor desk, ticker and graphics for a current story. Only for stories with t
 ## 7. Cartoon skit (15 to 90 s, vertical)
 The original cartoon-studio format: SVG art drawn by code, voiced characters, jokes. Use for comedy or for explaining something by acting it out. Needs the cartoon engine from the venda-khona repo (`scripts/toons/`); not yet in this workspace.
 
+## 7b. VTuber (the main format: 15 s to 15 min, vertical or landscape)
+A 3D anime avatar (V-Me) presents, explains or reacts, voiced by the Edge voices made in Termux, with web pages, screenshots, images and video clips on screen beside it.
+- Engine: the `gee-highness/v_me` repo (see `pipeline.md`, VTuber section). The video folder holds `script.vme.json`.
+- Structure: cold open on the avatar (hook in 3 s) > media in with the claim it proves > the avatar reacts (expression, gesture, a look at the media) > next beat > back to the avatar for the payoff and the ending line.
+- Change something every 3 to 6 s: a new media cue, a camera move, a gesture, a layout switch (corner, split, pip, full).
+- Every fact on screen comes from `claims.md`, and every page or clip has a `credit`.
+- Works for: documentaries told by a host, explainers, news-style recaps, "I read it so you don't have to", reactions with commentary.
+
 ## 8. Reaction / commentary (3 to 10 min)
 Only with footage we have rights to use or heavy transformative commentary; record the licence or the fair-use reasoning in `assets/LICENCES.md` and flag the risk to the user.
 

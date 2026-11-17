@@ -7,6 +7,8 @@
 - 2026-11-17 (carried) Loved the cartoon studio; wants a skill that keeps improving with different styles, videos and images, for YouTube, Reels and everything; more 15-second videos.
 - 2026-11-17 New direction: documentary-style videos on topics the user comes up with, plus long form and other formats. Ideas tracked in `IDEAS.md`, one folder per idea with research and context. Goal: YouTube videos and Reels that go viral.
 
+- 2026-11-17 Rejected the 24-style cartoon gallery direction ("Not exactly what I meant"): wants an engine to be a VTuber using the Termux voices plus online videos, screenshots and other media. V-Me is that engine.
+
 ## Channel and audience rules (fill in as the user decides)
 - Channel name: (not set)
 - Main audience and country: (not set; the cartoon channel targeted Southern Africa, median age 18 to 29)
