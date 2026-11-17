@@ -1,0 +1,14 @@
+# Brief: <working title>
+- Format / target length:
+- Platforms:
+- Audience:
+- Hook (first 3 s):
+- Promise (what the viewer gets):
+- Angle (why this telling is different):
+- Tone:
+- Why it will be shared (what a viewer says when sending it):
+- Title options (3):
+- Thumbnail idea:
+- Style (references/styles.md):
+- Series / links to other videos:
+- Score (C/E/S/F/F):
