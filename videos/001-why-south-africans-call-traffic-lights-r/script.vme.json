@@ -1,0 +1,58 @@
+{
+  "$schema": "../src/app/performer/performance.schema.json",
+  "version": 1,
+  "meta": {
+    "title": "Why South Africans call traffic lights robots",
+    "author": "Claude",
+    "description": "A 40-second VTuber short: the avatar explains the South African word 'robot' (traffic light) and the popular story behind it.",
+    "format": { "aspect": "9:16", "width": 1080, "height": 1920, "fps": 30 }
+  },
+  "setup": {
+    "avatar": "bundled-1",
+    "scene": "studio",
+    "background": "neonCity",
+    "lighting": "studioSoft",
+    "camera": "closeup",
+    "voice": { "engine": "termux", "edge": "en-US-EmmaMultilingualNeural", "edgeRate": "+15%" },
+    "idle": { "blink": true, "breathe": true, "sway": 0.35, "seed": 11 }
+  },
+  "cues": [
+    { "do": "caption", "at": 0, "text": "THE ROBOT", "style": "title" },
+    { "do": "look", "target": "camera" },
+    { "do": "expression", "name": "surprised", "weight": 0.8, "duration": 2.2 },
+    { "do": "gesture", "name": "shake" },
+    { "do": "say", "text": "If a South African tells you to turn left at the robot, please don't look for a robot." },
+    { "do": "caption", "text": null },
+
+    { "do": "media", "src": "/performances/robots/dictionary.png", "layout": "corner", "fit": "contain", "zoom": [1, 1.06], "title": "South African English" },
+    { "do": "look", "target": "left", "duration": 0.7 },
+    { "do": "gesture", "name": "point", "hand": "left", "offset": 0.4 },
+    { "do": "say", "text": "Robot means traffic light. Red, orange, green. That's the robot." },
+    { "do": "expression", "name": "happy", "weight": 0.6, "duration": 1.6 },
+
+    { "do": "media", "src": "/performances/robots/before-after.png", "layout": "pip", "fit": "contain", "cardAspect": 1, "zoom": [1, 1.06], "title": "The story goes" },
+    { "do": "look", "target": "camera" },
+    { "do": "gesture", "name": "think", "hand": "right" },
+    { "do": "say", "text": "So why robot? The story goes that the first traffic lights took over from police officers who directed cars by hand." },
+
+    { "do": "media", "src": "/performances/robots/robot-policeman.png", "layout": "split", "fit": "contain", "zoom": [1, 1.1] },
+    { "do": "expression", "name": "relaxed", "weight": 0.7, "duration": 3 },
+    { "do": "gesture", "name": "present", "hand": "left" },
+    { "do": "say", "text": "A machine doing a person's job. A robot policeman. Then just... robot." },
+    { "do": "gesture", "name": "nod" },
+    { "do": "say", "text": "Historians argue about the details. South Africans do not care. The name stuck." },
+
+    { "do": "media", "src": "/performances/robots/directions.png", "layout": "corner", "fit": "cover", "zoom": [1, 1.12], "side": "left" },
+    { "do": "look", "target": "right", "duration": 0.7 },
+    { "do": "expression", "name": "happy", "weight": 0.9, "duration": 3 },
+    { "do": "say", "text": "So next time your map says turn left at the robot, you'll know. You're welcome." },
+
+    { "do": "media", "src": null },
+    { "do": "camera", "preset": "closeup", "move": "ease", "duration": 0.8 },
+    { "do": "look", "target": "camera" },
+    { "do": "caption", "text": "Follow for more South African words", "style": "lower-third" },
+    { "do": "gesture", "name": "wave", "hand": "right" },
+    { "do": "say", "text": "Follow for more South African words that confuse the rest of the world." },
+    { "do": "wait", "seconds": 1.2 }
+  ]
+}

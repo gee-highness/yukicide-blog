@@ -1,0 +1,11 @@
+# Brief: Why South Africans call traffic lights robots
+- Format / target length: VTuber short, about 40 s, vertical
+- Platforms: TikTok, YouTube Shorts, Reels, WhatsApp Status
+- Audience: young South Africans (they share it) and foreigners confused by the word
+- Hook (first 3 s): "If a South African tells you to turn left at the robot, please don't look for a robot."
+- Promise: what "robot" means and the story behind the name
+- Angle: a cheerful host explains it with on-screen cards; the origin is told as "the story goes" because it is not firmly documented
+- Why it will be shared: South Africans tag foreign friends; foreigners tag their South African friend
+- Title options: "There is no robot." / "Why South Africans call traffic lights robots" / "Turn left at the WHAT?"
+- Series: South African words (next: now-now, just now, braai, tekkies)
+- Script: script.vme.json (V-Me). Voices: script.termux.sh (Emma, +15%). Media: own cards in assets/ (served by V-Me from /performances/robots/)
